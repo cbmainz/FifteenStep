@@ -5,10 +5,10 @@ typedef struct {
   uint8_t y;
 } GridCoordinate;
 
-// commands defined as arrays of grid coordinates
-const GridCoordinate MIDI_PANIC[]      = {{0, 0}, {0, 7}};
+// commands defined as arrays of grid coordinates ({col, row})
+const GridCoordinate MIDI_PANIC[]      = {{0, 0}, {8, 0}};
 const GridCoordinate PAUSE_TOGGLE[]    = {{0, 0}, {1, 0}};
-const GridCoordinate RECORD_TOGGLE[]   = {{0, 0}, {2, 0}};
+const GridCoordinate RECORD_TOGGLE[]   = {{0, 0}, {3, 0}};
 const GridCoordinate TEMPO_MODE[]      = {{0, 1}, {1, 1}};
 const GridCoordinate SHUFFLE_MODE[]    = {{0, 2}, {1, 2}};
 const GridCoordinate STEP_MODE[]       = {{0, 3}, {1, 3}};

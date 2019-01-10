@@ -16,7 +16,7 @@ void i2xy(uint8_t i, uint8_t *x, uint8_t *y) {
 
 void trellis_init() {
   trellis.begin();
-  trellis.setBrightness(80);
+  trellis.setBrightness(brightness);
   trellis.enableUSBMIDI(true);
   trellis.enableUARTMIDI(true);
 }

@@ -116,7 +116,10 @@ void setPlayhead(uint8_t x, boolean set) {
   for(uint8_t y=0; y<8; y++) {
     uint8_t i = xy2i(x, y);
     if(set)
-      trellis.setPixelColor(i, 0xFF0000);
+    	if(! record_mode)
+      	  trellis.setPixelColor(i, 0x66CC00);
+      	else
+      	  trellis.setPixelColor(i, 0xFF0000);
     else
       trellis.setPixelColor(i, 0x0);
   }

@@ -30,6 +30,9 @@ int pitch[] = {36, 38, 42, 46}; // general midi channel 10: kick, snare, hat clo
 int vel[] = {100, 80, 80, 80};
 int steps = 16;
 
+// set Brightness
+int brightness = 32; // 1-255
+
 #include "config/ui.h"
 #include "config/trellis.h"
 
